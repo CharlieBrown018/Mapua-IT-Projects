@@ -1,0 +1,38 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:name="tab_program_list"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    android:paddingLeft="0dp"
+    android:paddingTop="0dp"
+    android:paddingRight="0dp"
+    android:paddingBottom="0dp"
+    android:background="#414141">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#414141"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/newWorkout"
+            style="@style/Widget.AppCompat.Button.AddButton"
+            android:background="#737373"
+            android:text="@string/new_program"
+            android:textColor="#FFFFFF"/>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listWorkout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#414141"
+        android:drawSelectorOnTop="false"
+        android:minHeight="300dip" />
+
+</LinearLayout>
